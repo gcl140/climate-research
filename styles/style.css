@@ -77,17 +77,20 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .content-left,
   .main-content,
   .content-right {
     max-width: 80%;
     margin: 15px;
   }
+
   .controls {
     position: sticky !important;
     top: 0px !important;
     left: 0px !important;
   }
+
   .heda {
     width: 79%;
     flex: 1;
@@ -103,25 +106,31 @@ body {
     flex-direction: row;
     justify-content: space-between;
     border-radius: 20px;
+    z-index: 1000;
   }
+
   .container {
     display: inline-flex;
     align-items: center;
     width: 100%;
   }
+
   .menu-toggle {
     display: block;
     padding: 0;
   }
+
   #menu {
     max-height: 0;
     display: none;
   }
+
   #menu.expanded {
     max-height: 1000px;
     display: block;
   }
 }
+
 .content-left ul li a {
   position: relative;
 }
@@ -235,8 +244,8 @@ div h2 {
 .fa-solid,
 .fas {
   font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  padding-left: 20px;
+  /* font-weight: 900; */
+  /* padding-left: 20px; */
 }
 
 body {
@@ -261,23 +270,35 @@ th {
 
 .bar:nth-child(1) {
   background-color: #f08080;
-} /* Mass media */
+}
+
+/* Mass media */
 .bar:nth-child(2) {
   background-color: #90ee90;
-} /* Social media */
+}
+
+/* Social media */
 .bar:nth-child(3) {
   background-color: #add8e6;
   width: 55px !important;
-} /* Government agencies */
+}
+
+/* Government agencies */
 .bar:nth-child(4) {
   background-color: #ffb7b2;
-} /* Family and Friends */
+}
+
+/* Family and Friends */
 .bar:nth-child(5) {
   background-color: #ffdab9;
-} /* Local community */
+}
+
+/* Local community */
 .bar:nth-child(6) {
   background-color: #9c9c5c;
-} /* Internet */
+}
+
+/* Internet */
 .chart {
   width: 290px;
   height: 250px;
@@ -316,10 +337,53 @@ th {
 
 @media (max-width: 360px) {
 
-  body{
-      font-size: 16px !important;
+  body {
+    font-size: 16px !important;
   }
+
+  #back-to-top {
+    justify-content: space-between;
+    bottom: 10px;
+    right: 10px;
+}
+
+}
+
+#baton {
+  border: 0.1px solid grey;
+  font-family: inherit;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+
+#back-to-top {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  width: 27px;
+  height: 27px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#back-to-top i {
+  color: white;
+  font-size: 0.7cm;
+}
+
+#back-to-top.show {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */
-

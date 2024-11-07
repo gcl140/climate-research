@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menu-icon');
+    const baton = document.getElementById('baton');
     const menu = document.getElementById('menu');
     const links = document.querySelectorAll('.content-left ul li a');
     const lightModeIcon = document.getElementById('light-mode-icon');
@@ -14,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.addEventListener('click', () => {
         menu.classList.toggle('expanded');
         menuIcon.classList.toggle('active');
+    });
+    baton.addEventListener('click', () => {
+        menu.classList.toggle('expanded');
+        baton.classList.toggle('active');
     });
 
     links.forEach(link => {
@@ -55,4 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateZoom() {
         document.documentElement.style.fontSize = (1.5 + 0.2 * zoomLevel) + 'em';
     }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
