@@ -1,9 +1,13 @@
+@font-face {
+  font-family: george;
+  src: url(./georgia.ttf);
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Georgia;
+  font-family: george;
   margin: 0;
   padding: 0;
   line-height: 1.6;
