@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: times new roman;
+  font-family: Georgia;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -60,7 +60,7 @@ body {
   background: #f8f9fa;
   border-top: 1px solid #ddd;
   width: 100%;
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   height: 60px;
 }
@@ -89,7 +89,7 @@ body {
     left: 0px !important;
   }
   .heda {
-    width: 83%;
+    width: 79%;
     flex: 1;
     background: #1A1A1A;
     border: 1px solid #ddd;
@@ -246,7 +246,7 @@ body {
 table {
   width: fit-content;
   border-collapse: collapse;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 th, td {
@@ -310,8 +310,15 @@ th {
 
 #section15 i {
   color: rgb(109, 109, 109);
-  font-size: 20px;
+  font-size: inherit;
   margin-top: 100px;
+}
+
+@media (max-width: 360px) {
+
+  body{
+      font-size: 16px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

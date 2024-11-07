@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: times new roman;
+    // font-family: times new roman;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -76,7 +76,10 @@ body {
     // overflow: hidden;
 }
 
-@media (max-width: 768px) {
+
+
+    @media (max-width: 768px) {
+
 
     .content-left,
     .main-content,
@@ -139,6 +142,7 @@ body {
         max-height: 1000px;
         display: block;
     }
+
 }
 
 .content-left ul li a {
