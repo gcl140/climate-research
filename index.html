@@ -19,16 +19,22 @@
         <div class="controls">
             <i class="fa-solid fa-moon" alt="Light Mode" id="light-mode-icon"></i>
             <i class="fa-solid fa-sun" alt="Dark Mode" id="dark-mode-icon"
-                style="display: none; padding-left: 20px;"></i>
+                style="display: none;"></i>
         </div>
     </div>
     <div class="container">
 
         <div class="content-left" id="menu">
-            <br>
-            <br>
-            <br>
-            <BUTTON id="baton">CLOSE</BUTTON>
+            <div id="controls">
+                <!-- <BUTTON id="baton" style="display: none;" class="controlz">CLOSE</BUTTON> -->
+                <!-- <br> -->
+                <!-- <p style='font-weight:bold;'><button type='button' id="baton" onclick="financed()">DOWNLOAD</button></p> -->
+                <div class="button-container">
+                    <button id="baton"  style="display: none;">
+                        CLOSE
+                    </button>
+                </div>
+            </div>
             <h2>Contents</h2>
             <ul>
                 <li><a href="#section1">Abstract</a></li>
@@ -51,6 +57,11 @@
                 <li><a href="#section15">References </a></li>
 
             </ul>
+            <div class="button-container">
+                <button id="baton" onclick="financed()"> DOWNLOAD
+                </button>
+            </div>
+
         </div>
         <div class="main-content">
             <div class="header">
@@ -1249,7 +1260,7 @@
     </div>
     <div id="back-to-top">
         <i class="fas fa-arrow-up"></i>
-      </div>
+    </div>
     <div class="footer">
         <p>© 2024 <a href="climatenyouth.netlify.app"><i style="color: inherit; font-size: inherit;">
                     climatenyouth.</i></a> All rights reserved.</p>

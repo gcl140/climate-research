@@ -86,7 +86,7 @@ body {
   .main-content,
   .content-right {
     max-width: 80%;
-    margin: 15px;
+    /* margin: 15px; */
   }
 
   .controls {
@@ -110,7 +110,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     border-radius: 20px;
-    z-index: 1000;
+    /* z-index: 1000; */
   }
 
   .container {
@@ -166,6 +166,10 @@ body {
   cursor: pointer;
   align-items: center;
   z-index: 1000;
+  
+  background-color: black;
+  padding: 10px;
+  border-radius: 100%;
 }
 
 .controls img {
@@ -231,7 +235,7 @@ i {
 
 .fa-sun:before {
   content: "\f185";
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 div h2 {
@@ -341,6 +345,10 @@ th {
 
 @media (max-width: 360px) {
 
+  #baton{
+    display: block !important;
+  }
+
   body {
     font-size: 16px !important;
   }
@@ -353,13 +361,13 @@ th {
 
 }
 
-#baton {
+/* #baton {
   border: 0.1px solid grey;
   font-family: inherit;
   background-color: white;
   border-radius: 20px;
   padding: 7px;
-}
+} */
 
 
 #back-to-top {
@@ -390,4 +398,34 @@ th {
   opacity: 0.6;
 }
 
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+#baton {
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 5px 5px 0px #000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#baton:hover {
+  box-shadow: 4px 4px 0px #000;
+  transform: translate(1px, 1px);
+}
+
+.icon {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */

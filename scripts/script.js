@@ -78,3 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+
+            
+            
+function financed() {
+    const pdfUrl = 'https://drive.google.com/file/d/1prO_q1130SkiRaisMbfGBAtGGc7DHQ4l/view?usp=sharing';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'YOUTH PERCEPTIONS AND KNOWLEDGE ON THE EFFECTIVENESS OF INDIVIDUAL ACTIONS IN MITIGATING CLIMATE CHANGE';
+    link.click();
+}
