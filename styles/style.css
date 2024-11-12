@@ -89,6 +89,10 @@ body {
     /* margin: 15px; */
   }
 
+  .main-content{
+    margin: auto;
+  }
+
   .controls {
     position: sticky !important;
     top: 0px !important;
@@ -109,6 +113,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: auto;
     border-radius: 20px;
     /* z-index: 1000; */
   }
@@ -429,3 +434,9 @@ th {
   font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
+@media (min-width: 768px) and (max-width: 1000px) {
+  .content-left {
+    font-size: 14.3px;
+  }
+}
+
