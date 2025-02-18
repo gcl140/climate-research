@@ -248,7 +248,13 @@ div h2 {
   width: fit-content;
 }
 
-#section13 i {
+h4 {
+  font-style: italic;
+  text-align: center;
+  color:#444;
+}
+
+#section18 i {
   font-size: inherit !important;
   text-wrap: wrap;
   color: inherit;
@@ -342,7 +348,7 @@ th {
   transform: rotate(180deg);
 }
 
-#section15 i {
+#section20 i {
   color: rgb(109, 109, 109);
   font-size: inherit;
   margin-top: 100px;
@@ -409,6 +415,11 @@ th {
   display: inline-block;
 }
 
+.button-containerr {
+  position: relative;
+  display: inline-block;
+}
+
 #baton {
   font-family: inherit;
   font-size: inherit;
@@ -440,3 +451,12 @@ th {
   }
 }
 
+
+
+
+
+@media (min-width: 917px) {
+  .button-containerr {
+    display: none;
+  }
+}
