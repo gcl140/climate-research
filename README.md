@@ -53,7 +53,7 @@ The study examines:
 
 3. **Compile SCSS (if making style changes)**
    ```bash
-   npm run sass
+   npx sass styles/style.scss styles/style.css
    ```
 
 ## 🚀 Usage
