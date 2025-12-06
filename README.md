@@ -111,7 +111,6 @@ climate-research/
 │   └── source of knldg.png  # Knowledge source graphic
 ├── package.json        # Project dependencies
 └── LICENSE             # MIT License
-
 ```
 
 ## 🎨 Features in Detail
